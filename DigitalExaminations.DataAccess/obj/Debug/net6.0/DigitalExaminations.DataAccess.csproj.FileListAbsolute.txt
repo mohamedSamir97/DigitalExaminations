@@ -1,0 +1,14 @@
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.DataAccess\bin\Debug\net6.0\DigitalExaminations.DataAccess.deps.json
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.DataAccess\bin\Debug\net6.0\DigitalExaminations.DataAccess.dll
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.DataAccess\bin\Debug\net6.0\DigitalExaminations.DataAccess.pdb
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.DataAccess\obj\Debug\net6.0\DigitalExaminations.DataAccess.csproj.AssemblyReference.cache
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.DataAccess\obj\Debug\net6.0\DigitalExaminations.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.DataAccess\obj\Debug\net6.0\DigitalExaminations.DataAccess.AssemblyInfoInputs.cache
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.DataAccess\obj\Debug\net6.0\DigitalExaminations.DataAccess.AssemblyInfo.cs
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.DataAccess\obj\Debug\net6.0\DigitalExaminations.DataAccess.csproj.CoreCompileInputs.cache
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.DataAccess\obj\Debug\net6.0\DigitalExaminations.DataAccess.dll
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.DataAccess\obj\Debug\net6.0\refint\DigitalExaminations.DataAccess.dll
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.DataAccess\obj\Debug\net6.0\DigitalExaminations.DataAccess.pdb
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.DataAccess\obj\Debug\net6.0\ref\DigitalExaminations.DataAccess.dll
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.DataAccess\bin\Debug\net6.0\DigitalExaminations.DataAccess.runtimeconfig.json
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.DataAccess\obj\Debug\net6.0\DigitalExaminations.DataAccess.genruntimeconfig.cache

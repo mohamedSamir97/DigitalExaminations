@@ -1,0 +1,17 @@
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\bin\Debug\net6.0\DigitalExaminations.BLL.deps.json
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\bin\Debug\net6.0\DigitalExaminations.BLL.dll
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\bin\Debug\net6.0\DigitalExaminations.BLL.pdb
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\bin\Debug\net6.0\DigitalExaminations.DataAccess.dll
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\bin\Debug\net6.0\DigitalExaminations.ViewModels.dll
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\bin\Debug\net6.0\DigitalExaminations.ViewModels.pdb
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\bin\Debug\net6.0\DigitalExaminations.DataAccess.pdb
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\obj\Debug\net6.0\DigitalExaminations.BLL.csproj.AssemblyReference.cache
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\obj\Debug\net6.0\DigitalExaminations.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\obj\Debug\net6.0\DigitalExaminations.BLL.AssemblyInfoInputs.cache
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\obj\Debug\net6.0\DigitalExaminations.BLL.AssemblyInfo.cs
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\obj\Debug\net6.0\DigitalExaminations.BLL.csproj.CoreCompileInputs.cache
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\obj\Debug\net6.0\DigitalExaminations.BLL.csproj.CopyComplete
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\obj\Debug\net6.0\DigitalExaminations.BLL.dll
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\obj\Debug\net6.0\refint\DigitalExaminations.BLL.dll
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\obj\Debug\net6.0\DigitalExaminations.BLL.pdb
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.BLL\obj\Debug\net6.0\ref\DigitalExaminations.BLL.dll

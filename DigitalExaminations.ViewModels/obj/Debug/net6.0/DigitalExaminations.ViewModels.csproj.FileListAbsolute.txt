@@ -1,0 +1,15 @@
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.ViewModels\bin\Debug\net6.0\DigitalExaminations.ViewModels.deps.json
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.ViewModels\bin\Debug\net6.0\DigitalExaminations.ViewModels.dll
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.ViewModels\bin\Debug\net6.0\DigitalExaminations.ViewModels.pdb
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.ViewModels\bin\Debug\net6.0\DigitalExaminations.DataAccess.dll
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.ViewModels\bin\Debug\net6.0\DigitalExaminations.DataAccess.pdb
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.ViewModels\obj\Debug\net6.0\DigitalExaminations.ViewModels.csproj.AssemblyReference.cache
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.ViewModels\obj\Debug\net6.0\DigitalExaminations.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.ViewModels\obj\Debug\net6.0\DigitalExaminations.ViewModels.AssemblyInfoInputs.cache
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.ViewModels\obj\Debug\net6.0\DigitalExaminations.ViewModels.AssemblyInfo.cs
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.ViewModels\obj\Debug\net6.0\DigitalExaminations.ViewModels.csproj.CoreCompileInputs.cache
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.ViewModels\obj\Debug\net6.0\DigitalExaminations.ViewModels.csproj.CopyComplete
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.ViewModels\obj\Debug\net6.0\DigitalExaminations.ViewModels.dll
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.ViewModels\obj\Debug\net6.0\refint\DigitalExaminations.ViewModels.dll
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.ViewModels\obj\Debug\net6.0\DigitalExaminations.ViewModels.pdb
+D:\Assessment solutions and Interview\American University in Emirates\DigitalExaminations\DigitalExaminations.ViewModels\obj\Debug\net6.0\ref\DigitalExaminations.ViewModels.dll
