@@ -12,13 +12,16 @@ namespace DigitalExaminations.Web.Controllers
         private readonly IStudentService _studentService;
         private readonly IExamService _examService;
         private readonly IQnAService _qnAService;
+        private readonly IAccountService _accountService;
 
         public StudentsController(IStudentService studentService,
-            IExamService examService, IQnAService qnAService)
+            IExamService examService, IQnAService qnAService,
+            IAccountService accountService)
         {
             _studentService = studentService;
             _examService = examService;
             _qnAService = qnAService;
+            _accountService = accountService;
         }
 
         public IActionResult Index(int pageNumber = 1, int pageSize = 10)
@@ -32,11 +35,17 @@ namespace DigitalExaminations.Web.Controllers
             return View();
         }
 
-        [HttpPost,ValidateAntiForgeryToken]
+        [HttpPost, ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(StudentViewModel studentViewModel)
         {
             if (ModelState.IsValid)
             {
+                bool isExists = _accountService.UserExistsAsync(studentViewModel.UserName, (int)EnumRoles.Student);
+                if (isExists)
+                {
+                    ModelState.AddModelError(string.Empty, "User Name already exists.");
+                    return View(studentViewModel);
+                }
                 await _studentService.AddAsync(studentViewModel);
                 return RedirectToAction(nameof(Index));
             }
@@ -104,11 +113,17 @@ namespace DigitalExaminations.Web.Controllers
             if (sessionObj != null)
             {
                 var model = _studentService.GetStudentDetails(Convert.ToInt32(sessionObj.Id));
-                if (model.PictureFileName != null)
+                
+                if (model != null)
                 {
-                    model.PictureFileName = ConfigurationManager.GetFilePath() + model.PictureFileName;
-               }
-                model.CVFileName = ConfigurationManager.GetFilePath() + model.CVFileName;
+                    if (model.PictureFileName != null)
+                    {
+                        model.PictureFileName = ConfigurationManager.GetFilePath() + model.PictureFileName ?? "";
+                        model.CVFileName = ConfigurationManager.GetFilePath() + model.CVFileName ?? "";
+                    }
+
+                }
+                
                 return View(model);
 
             }
@@ -116,7 +131,7 @@ namespace DigitalExaminations.Web.Controllers
             return RedirectToAction("Login", "Account");
         }
 
-        [HttpPost,ValidateAntiForgeryToken]
+        [HttpPost, ValidateAntiForgeryToken]
         public IActionResult Profile([FromForm] StudentViewModel studentViewModel)
         {
             if (studentViewModel.PictureFile != null)

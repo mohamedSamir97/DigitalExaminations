@@ -1,5 +1,6 @@
 ﻿using DigitalExaminations.BLL.Services;
 using DigitalExaminations.ViewModels;
+using DigitalExaminations.Web.Extensions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DigitalExaminations.Web.Controllers
@@ -30,7 +31,9 @@ namespace DigitalExaminations.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                groupViewModel.UsersId = 1;
+                LoginViewModel sessionObj = HttpContext.Session.Get<LoginViewModel>("loginvm");
+
+                groupViewModel.UsersId = sessionObj.Id ;
                 await _groupService.AddGroupAsync(groupViewModel);
                 return RedirectToAction(nameof(Index));
             }

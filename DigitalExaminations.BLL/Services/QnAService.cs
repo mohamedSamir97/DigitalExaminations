@@ -27,7 +27,7 @@ namespace DigitalExaminations.BLL.Services
             {
                 QnAs objQnA = QnAVM.ConvertViewModel(QnAVM);
                 await _unitOfWork.GenericRepository<QnAs>().AddAsync(objQnA);
-                _unitOfWork.Save();
+                await _unitOfWork.SaveAsync();
             }
             catch (Exception ex)
             {

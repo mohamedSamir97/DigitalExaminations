@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lXld5y8+Lv1X2RWdFcGWs3QeDK9DwwCoVLb60zGwWtY=",
+  "Hash": "6cVtLZlYxfgpS6UtltQn+CnfnKXMilhAd00VoXT/U/0=",
   "Source": "DigitalExaminations.Web",
   "BasePath": "_content/DigitalExaminations.Web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Assessment solutions and Interview\\American University in Emirates\\DigitalExaminations\\DigitalExaminations.Web\\wwwroot\\file\\80531e0d-e9a5-47b8-820c-be567bea89bd.png",
+      "SourceId": "DigitalExaminations.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Assessment solutions and Interview\\American University in Emirates\\DigitalExaminations\\DigitalExaminations.Web\\wwwroot\\",
+      "BasePath": "_content/DigitalExaminations.Web",
+      "RelativePath": "file/80531e0d-e9a5-47b8-820c-be567bea89bd.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\file\\80531e0d-e9a5-47b8-820c-be567bea89bd.png"
     },
     {
       "Identity": "D:\\Assessment solutions and Interview\\American University in Emirates\\DigitalExaminations\\DigitalExaminations.Web\\wwwroot\\js\\site.js",

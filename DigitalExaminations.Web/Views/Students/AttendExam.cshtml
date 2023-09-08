@@ -1,4 +1,4 @@
-﻿@model DigitalExaminations.ViewModels.AttendExamViewModel
+﻿@model AttendExamViewModel
 
 @{
     ViewData["Title"] = "AttendExam";
@@ -11,7 +11,7 @@
 
 @if (Model.Message == "")
 {
-    <form asp-action="Attend Exam" asp-controller="Students" method="post">
+    <form asp-action="AttendExam" asp-controller="Students" method="post">
         <input type="hidden" asp-for="StudentId" />
         <ul>
             @for (var i = 0; i < Model.QnAs.Count(); i++)
@@ -19,8 +19,7 @@
 
                 <input type="hidden" asp-for="@Model.QnAs[i].Id" />
                 <input type="hidden" asp-for="@Model.QnAs[i].ExamsId" />
-                <li>
-                </li>
+                
                 <li>
                     <label for="@Model. QnAs[i].Question">@Model.QnAs[i].Question</label>
                     <select asp-for="@Model.QnAs[i].SelectedAnswer" class="form-control">
@@ -33,7 +32,7 @@
 
             }
         </ul>
-        <button type="submit" name="action">Submit</button>
+        <button class="btn btn-primary" type="submit" name="action">Submit</button>
     </form>
 }
 else{

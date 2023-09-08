@@ -46,7 +46,7 @@ namespace DigitalExaminations.ViewModels
         public string Description { get; set; }
         public int UsersId { get; set; }
 
-        public List<GroupViewModel> GroupList { get; set; }
+        public List<GroupViewModel>? GroupList { get; set; }
 
         public int TotalCount { get; set; }
         public List<StudentCheckBoxListViewModel> StudentCheckList { get; set; }

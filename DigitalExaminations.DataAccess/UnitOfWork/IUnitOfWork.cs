@@ -1,4 +1,5 @@
 ﻿using DigitalExaminations.DataAccess.Repository;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +12,7 @@ namespace DigitalExaminations.DataAccess.UnitOfWork
     {
         IGenericRepository<T> GenericRepository<T>() where T : class;
         void Save();
+        Task<int> SaveAsync();
+        
     }
 }

@@ -76,9 +76,9 @@ namespace DigitalExaminations.ViewModels
         public string Option4 { get; set; }
 
 
-        public List<QnAsViewModel> QnAsList { get; set; }
+        public List<QnAsViewModel> QnAsList { get; set; } = new List<QnAsViewModel>();
 
-        public IEnumerable<Exams> ExamList { get; set; }
+        public IEnumerable<Exams> ExamList { get; set; } = new List<Exams>();
 
         public int TotalCount { get; set; }
 

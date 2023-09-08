@@ -1,4 +1,4 @@
-﻿@model PagedResult<DigitalExaminations.ViewModels.ExamViewModel>
+﻿@model PagedResult<ExamViewModel>
 
 @{
     ViewData["Title"] = "Index";
@@ -31,7 +31,7 @@
                         <td>@item.Title</td>
                         <td>@item.Description</td>
                         <td>@item.StartDate</td>
-                        <td>@item. Time hours</td>
+                        <td>@item.Time hour(s)</td>
                     </tr>
                 }
             </tbody>
@@ -68,13 +68,13 @@
             var element = document.getElementById('examGrid');
             // Choose pagebreak options based on mode.
             var mode = "avoid-all";
-            var pagebreak = mode === 'specify' ?
-                { mode: before: '.before', after: '.after', avoid: '.avoid' } :
+            var pagebreak = (mode === 'specify') ?
+                { mode: 'before: .before, after: .after, avoid: .avoid' } :
                 { mode: mode };
             // Generate the PDF.
             html2pdf().from(element).set({
                 margin: [30, 10, 5, 10], //top, left, buttom, right,
-                pagebreak: avoid: 'tr' },
+                pagebreak: pagebreak,
                 jsPDF: { orientation: 'landscape', unit: 'pt', format: 'letter', compressPDF: true }
             }).save();
 

@@ -31,11 +31,17 @@ namespace DigitalExaminations.Web.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(UserViewModel userViewModel)
+        public async Task<IActionResult> Create(UserViewModel userViewModel)
         {
             if (ModelState.IsValid)
             {
-                _accountService.AddTeacher(userViewModel);
+                bool isExists = _accountService.UserExistsAsync(userViewModel.UserName, userViewModel.Role);
+                if (isExists)
+                {
+                    ModelState.AddModelError(string.Empty, "User Name already exists.");
+                    return View(userViewModel);
+                }
+                await _accountService.AddUser(userViewModel);
 
                 return RedirectToAction("Index");
             }

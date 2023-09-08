@@ -23,6 +23,8 @@ namespace DigitalExaminations.DataAccess.Repository
         Task<T>
 
         GetByIdAsync(object id);
+
+        bool UserExistsAsync(string username, int roleId);
         void Add(T entity);
 
         Task<T> AddAsync(T entity);

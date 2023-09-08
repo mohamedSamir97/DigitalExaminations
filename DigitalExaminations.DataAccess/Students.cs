@@ -19,11 +19,11 @@ namespace DigitalExaminations.DataAccess
 
         public string Password { get; set; }
 
-        public string Contact { get; set; }
+        public string? Contact { get; set; }
 
-        public string CVFileName { get; set; }
+        public string? CVFileName { get; set; }
 
-        public string PictureFileName { get; set; }
+        public string? PictureFileName { get; set; }
 
         public int? GroupsId { get; set; }
 

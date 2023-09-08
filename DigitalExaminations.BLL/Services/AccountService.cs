@@ -1,6 +1,7 @@
 ﻿using DigitalExaminations.DataAccess;
 using DigitalExaminations.DataAccess.UnitOfWork;
 using DigitalExaminations.ViewModels;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -25,7 +26,7 @@ namespace DigitalExaminations.BLL.Services
             _iLogger = iLogger;
         }
 
-        public bool AddTeacher(UserViewModel vm)
+        public async Task<bool> AddUser(UserViewModel vm)
         {
             try
             {
@@ -35,10 +36,27 @@ namespace DigitalExaminations.BLL.Services
                     Name = vm.Name,
                     UserName = vm.UserName,
                     Password = vm.Password,
-                    Role = (int)EnumRoles.Teacher
+                    Role = vm.Role
                 };
-                _unitOfWork.GenericRepository<Users>().AddAsync(obj);
-                _unitOfWork.Save();
+                await _unitOfWork.GenericRepository<Users>().AddAsync(obj);
+
+                if (vm.Role == (int)EnumRoles.Student)
+                {
+                    var student = new Students
+                    {
+                        Name = vm.Name,
+                        UserName = vm.UserName,
+                        Password = vm.Password,
+                        GroupsId =1, //default group 
+                        Contact = "",
+                        CVFileName = "",
+                        PictureFileName = ""
+
+                    };
+                    await _unitOfWork.GenericRepository<Students>().AddAsync(student);
+                }
+
+                await _unitOfWork.SaveAsync();
             }
             catch (Exception ex)
             {
@@ -48,6 +66,7 @@ namespace DigitalExaminations.BLL.Services
             }
             return true;
         }
+
 
         public PagedResult<UserViewModel> GetAllTeachers(int pageNumber, int pageSize)
         {
@@ -106,7 +125,7 @@ namespace DigitalExaminations.BLL.Services
             }
             else
             {
-                var student = _unitOfWork.GenericRepository<Students>().GetAll()
+                var student = _unitOfWork.GenericRepository<Users>().GetAll()
                     .FirstOrDefault(a => a.UserName == vm.UserName.Trim()
                     && a.Password == vm.Password.Trim());
                 if (student != null)
@@ -119,6 +138,12 @@ namespace DigitalExaminations.BLL.Services
             }
 
             return null;
+        }
+
+
+        public  bool UserExistsAsync(string username, int roleId)
+        {
+            return _unitOfWork.GenericRepository<Users>().UserExistsAsync(username, roleId);
         }
     }
 }

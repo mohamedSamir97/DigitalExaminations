@@ -30,7 +30,8 @@ namespace DigitalExaminations.ViewModels
 
         public Students ConvertViewModel(StudentViewModel vm)
         {
-            return new Students
+             
+              var student =    new Students
             {
                 Id = vm.Id,
                 Name = vm.Name ?? "",
@@ -39,8 +40,10 @@ namespace DigitalExaminations.ViewModels
                 Contact = vm.Contact ?? "",
                 CVFileName = vm.CVFileName ?? "",
                 PictureFileName = vm.PictureFileName ?? "",
-                GroupsId = vm.GroupsId
-            };
+                GroupsId = vm.GroupsId == null ? 1 : vm.GroupsId
+              };
+
+            return student;
         }
 
 

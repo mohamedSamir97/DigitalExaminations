@@ -28,7 +28,7 @@ namespace DigitalExaminations.BLL.Services
             {
                 Exams objExam = examVM.ConvertViewModel(examVM);
                 await _unitOfWork.GenericRepository<Exams>().AddAsync(objExam);
-                _unitOfWork.Save();
+                await _unitOfWork.SaveAsync();
             }
             catch (Exception ex)
             {

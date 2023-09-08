@@ -16,3 +16,21 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.footer-custom {
+/*    position: absolute;
+    bottom: 0px;
+    //height: 3px;
+    background-color: #666;
+    color: #eee;
+    width: 100%;
+    text-align: center;*/
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}

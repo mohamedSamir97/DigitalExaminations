@@ -48,9 +48,9 @@ namespace DigitalExaminations.ViewModels
         public int Time { get; set; }
 
         public int GroupsId { get; set; }
-        public List<ExamViewModel> ExamList { get; set; }
+        public List<ExamViewModel> ExamList { get; set; } = new List<ExamViewModel>();
         public int TotalCount { get; set; }
-        public IEnumerable<Groups> GroupList { get; set; }
+        public IEnumerable<Groups> GroupList { get; set; } = new List<Groups>();
 
 
     }

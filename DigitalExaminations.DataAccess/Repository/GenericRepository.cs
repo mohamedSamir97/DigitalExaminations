@@ -117,6 +117,10 @@ namespace DigitalExaminations.DataAccess.Repository
             return await dbSet.FindAsync(id);
         }
 
+        public bool UserExistsAsync(string username, int roleId)
+        {
+            return _context.Users.Any(u => u.UserName == username && u.Role == roleId);
+        }
         public void Update(T entityToUpdate)
         {
             dbSet.Attach(entityToUpdate);

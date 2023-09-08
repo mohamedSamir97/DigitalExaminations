@@ -27,7 +27,9 @@ namespace DigitalExaminations.BLL.Services
             {
                 Students obj = vm.ConvertViewModel(vm);
 
+                //add to students table
                 await _unitOfWork.GenericRepository<Students>().AddAsync(obj);
+                
 
                 Users obj2 = new Users()
                 {
@@ -37,8 +39,10 @@ namespace DigitalExaminations.BLL.Services
                     Password = vm.Password,
                     Role = (int)EnumRoles.Student,
                 };
+
+                //add to user table
                await _unitOfWork.GenericRepository<Users>().AddAsync(obj2);
-                _unitOfWork.Save();
+                await _unitOfWork.SaveAsync();
             }
             catch (Exception ex)
             {
@@ -194,12 +198,13 @@ namespace DigitalExaminations.BLL.Services
                     {
                         if (student.GroupsId == vm.Id)
                         {
-                            student.GroupsId = null;
+                            student.GroupsId = 1;
                         }
                     }
-                    _unitOfWork.Save();
-                    return true;
+
                 }
+                _unitOfWork.Save();
+                return true;
 
             }
             catch (Exception ex)

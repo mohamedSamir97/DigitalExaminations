@@ -10,7 +10,9 @@ namespace DigitalExaminations.BLL.Services
     public interface IAccountService
     {
         LoginViewModel Login(LoginViewModel vm);
-        bool AddTeacher(UserViewModel vm);
+        Task<bool> AddUser(UserViewModel vm);
+
+       bool UserExistsAsync(string username, int roleId);
 
         PagedResult<UserViewModel> GetAllTeachers(int pageNumber, int pageSize);
     }
